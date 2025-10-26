@@ -333,9 +333,18 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/GameManager.cs"
-"Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/ItemSpawner.cs"
+"Assets/Scripts/MoveCamera.cs"
+"Assets/Scripts/ObjectGrabble.cs"
+"Assets/Scripts/PlayerCam.cs"
+"Assets/Scripts/PlayerPickupDrop.cs"
 "Assets/Scripts/randomMove.cs"
 "Assets/Scripts/ThirdPersonOrbitCamera.cs"
+"Assets/Supercyan Character Pack Free Sample/Scripts/AccessoryLogic.cs"
+"Assets/Supercyan Character Pack Free Sample/Scripts/AccessoryWearLogic.cs"
+"Assets/Supercyan Character Pack Free Sample/Scripts/DemoFree.cs"
+"Assets/Supercyan Character Pack Free Sample/Scripts/FreeCameraLogic.cs"
+"Assets/Supercyan Character Pack Free Sample/Scripts/SimpleSampleCharacterControl.cs"
 -langversion:9.0
 
 /deterministic

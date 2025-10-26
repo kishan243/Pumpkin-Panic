@@ -1,45 +1,33 @@
 using UnityEngine;
 
+/// <summary>
+/// A simple FPP (First Person Perspective) camera rotation script.
+/// Like those found in most FPS (First Person Shooter) games.
+/// </summary>
 public class ThirdPersonOrbitCamera : MonoBehaviour
 {
 
-    public Transform target;
-
-    public float rotationSpeed = 2.0f;
-
-    public float minVerticalAngle = -45.0f;
-    public float maxVerticalAngle = 45.0f;
-
-    private float yaw = 0.0f;   
-    private float pitch = 0.0f; 
-
-    void Start()
+    public float Sensitivity
     {
-
-        Cursor.lockState = CursorLockMode.Locked;
-
-
-        yaw = transform.eulerAngles.y;
-        pitch = transform.eulerAngles.x;
+        get { return sensitivity; }
+        set { sensitivity = value; }
     }
+    [Range(0.1f, 9f)][SerializeField] float sensitivity = 2f;
+    [Tooltip("Limits vertical camera rotation. Prevents the flipping that happens when rotation goes above 90.")]
+    [Range(0f, 90f)][SerializeField] float yRotationLimit = 88f;
 
+    Vector2 rotation = Vector2.zero;
+    const string xAxis = "Mouse X"; //Strings in direct code generate garbage, storing and re-using them creates no garbage
+    const string yAxis = "Mouse Y";
 
-    void LateUpdate()
+    void Update()
     {
-        if (target != null)
-        {
+        rotation.x += Input.GetAxis(xAxis) * sensitivity;
+        rotation.y += Input.GetAxis(yAxis) * sensitivity;
+        rotation.y = Mathf.Clamp(rotation.y, -yRotationLimit, yRotationLimit);
+        var xQuat = Quaternion.AngleAxis(rotation.x, Vector3.up);
+        var yQuat = Quaternion.AngleAxis(rotation.y, Vector3.left);
 
-            transform.position = target.position;
-
-
-            yaw += rotationSpeed * Input.GetAxis("Mouse X");
-            pitch -= rotationSpeed * Input.GetAxis("Mouse Y");
-
-            pitch = Mathf.Clamp(pitch, minVerticalAngle, maxVerticalAngle);
-
-            Quaternion finalRotation = Quaternion.Euler(pitch, yaw, 0);
-
-            transform.rotation = finalRotation;
-        }
+        transform.localRotation = xQuat * yQuat; //Quaternions seem to rotate more consistently than EulerAngles. Sensitivity seemed to change slightly at certain degrees using Euler. transform.localEulerAngles = new Vector3(-rotation.y, rotation.x, 0);
     }
 }
