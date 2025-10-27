@@ -7,10 +7,7 @@ public class ObjectGrabble : MonoBehaviour
 {
     public Rigidbody objectRigidbody { get; private set; }
 
-    // --- NEW ---
-    // Drag your "Hit" particle effect or UI prefab here
     [SerializeField] private GameObject hitEffectPrefab;
-    // -----------
 
     private void Awake()
     {
@@ -19,55 +16,50 @@ public class ObjectGrabble : MonoBehaviour
 
     public void Grab(Transform objectGrabPointTransform)
     {
-        // Turn off physics so the object doesn't fall
         objectRigidbody.isKinematic = true;
-
-        // Make the object a child of the grab point so it moves with it
         this.transform.SetParent(objectGrabPointTransform);
-
-        // Snap the object's position and rotation to the grab point
         this.transform.localPosition = Vector3.zero;
         this.transform.localRotation = Quaternion.identity;
     }
 
     public void Drop()
     {
-        // Un-parent the object so it stops following
         this.transform.SetParent(null);
-
-        // Turn physics back on so it can fall
         objectRigidbody.isKinematic = false;
     }
 
-    // --- NEW: This function runs when the pumpkin hits another collider ---
-    private void OnCollisionEnter(Collision collision)
+    // --- THIS IS THE FIX ---
+    // The parameter is now 'Collider other' instead of 'Collision collision'
+    private void OnTriggerEnter(Collider other)
     {
-        // We only care about collisions *after* we've been shot.
-        // If we are parented to the grab point, don't do anything.
+        // We only care about hits *after* we've been shot
         if (transform.parent != null)
         {
             return;
         }
 
         // Check if the thing we hit is tagged "Ghost"
-        if (collision.gameObject.CompareTag("Collectible"))
+        if (other.gameObject.CompareTag("Ghost"))
         {
-            // --- 1. Show the nice UI ---
+            // --- 1. Show the nice UI/Effect ---
             if (hitEffectPrefab != null)
-            {
-                // Get the exact point of contact
-                ContactPoint contact = collision.contacts[0];
-
-                // Spawn the hit effect at that point, rotated to face away from the surface
-                Instantiate(hitEffectPrefab, contact.point, Quaternion.LookRotation(contact.normal));
-            }
-
-            // --- 2. Make the ghost disappear ---
-            Destroy(collision.gameObject);
-
-            // --- 3. Make the pumpkin disappear too ---
-            // (Optional, but makes sense for a "bullet")
-            Destroy(this.gameObject);
+                // We don't have a contact point, so just spawn at the ghost's position
+                Instantiate(hitEffectPrefab, other.transform.position, Quaternion.identity);
         }
+
+        // --- 2. Tell the ghost it's been hit ---
+        if (other.TryGetComponent(out GhostAI ghost))
+        {
+            ghost.TakeHit(); // Call the ghost's death function
+        }
+        else
+        {
+            // Fallback in case the ghost doesn't have the script (it should)
+            Destroy(other.gameObject);
+        }
+
+        // --- 3. Make the pumpkin disappear ---
+        Destroy(this.gameObject);
     }
 }
+
