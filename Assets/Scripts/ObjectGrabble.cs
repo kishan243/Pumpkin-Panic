@@ -39,7 +39,7 @@ public class ObjectGrabble : MonoBehaviour
         }
 
         // Check if the thing we hit is tagged "Ghost"
-        if (other.gameObject.CompareTag("Ghost"))
+        if (other.gameObject.CompareTag("Collectible"))
         {
             // --- 1. Show the nice UI/Effect ---
             if (hitEffectPrefab != null)
