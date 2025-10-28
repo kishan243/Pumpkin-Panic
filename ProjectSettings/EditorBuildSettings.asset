@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/menu.unity
+    guid: 55e3453e3c38e3e44a1eca475b265b02
+  - enabled: 1
     path: Assets/Scenes/RollSphere.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
