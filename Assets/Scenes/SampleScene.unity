@@ -38,7 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
+<<<<<<< HEAD
   m_IndirectSpecularColor: {r: 0.47427756, g: 0.28985366, b: 0.067177996, a: 1}
+=======
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+>>>>>>> 39d37f535362e3accf9020ad6cf08b69c0e97920
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -22076,7 +22080,11 @@ AudioListener:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1570526923}
+=======
+  m_GameObject: {fileID: 963194225}
+>>>>>>> 39d37f535362e3accf9020ad6cf08b69c0e97920
   m_Enabled: 1
 --- !u!20 &1570526926
 Camera:
@@ -22084,7 +22092,11 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1570526923}
+=======
+  m_GameObject: {fileID: 963194225}
+>>>>>>> 39d37f535362e3accf9020ad6cf08b69c0e97920
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -22446,6 +22458,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1589112471}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
@@ -24309,6 +24322,18 @@ MeshCollider:
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 0a3041dcda597954782f48ac8a97bf33, type: 3}
 --- !u!1 &1762188964
+=======
+  m_GameObject: {fileID: 963194225}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1760336062
+>>>>>>> 39d37f535362e3accf9020ad6cf08b69c0e97920
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24316,16 +24341,26 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 1762188965}
   - component: {fileID: 1762188967}
   - component: {fileID: 1762188966}
   m_Layer: 5
   m_Name: Fill
+=======
+  - component: {fileID: 1760336066}
+  - component: {fileID: 1760336065}
+  - component: {fileID: 1760336064}
+  - component: {fileID: 1760336063}
+  m_Layer: 0
+  m_Name: Plane
+>>>>>>> 39d37f535362e3accf9020ad6cf08b69c0e97920
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!224 &1762188965
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24389,11 +24424,15 @@ GameObject:
   m_PrefabInstance: {fileID: 774037597}
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &1764995315
+=======
+--- !u!64 &1760336063
+>>>>>>> 39d37f535362e3accf9020ad6cf08b69c0e97920
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1764995311}
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -25573,6 +25612,9 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1820442183}
+=======
+  m_GameObject: {fileID: 1760336062}
+>>>>>>> 39d37f535362e3accf9020ad6cf08b69c0e97920
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -25588,12 +25630,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 --- !u!23 &1820442185
+=======
+--- !u!23 &1760336064
+>>>>>>> 39d37f535362e3accf9020ad6cf08b69c0e97920
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1820442183}
   m_Enabled: 1
   m_CastShadows: 1
@@ -27644,6 +27691,9 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2021007043}
+=======
+  m_GameObject: {fileID: 1760336062}
+>>>>>>> 39d37f535362e3accf9020ad6cf08b69c0e97920
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -27679,12 +27729,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+<<<<<<< HEAD
 --- !u!33 &2021007046
+=======
+--- !u!33 &1760336065
+>>>>>>> 39d37f535362e3accf9020ad6cf08b69c0e97920
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 2021007043}
   m_Mesh: {fileID: 1499014401511807632, guid: 2efc3c5afc9e5bc4c94d564a9c0c48b4, type: 3}
 --- !u!1 &2022324761 stripped
@@ -27797,10 +27852,17 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &2027072511
 MeshCollider:
+=======
+  m_GameObject: {fileID: 1760336062}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1760336066
+Transform:
+>>>>>>> 39d37f535362e3accf9020ad6cf08b69c0e97920
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 935255519}
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -30175,10 +30237,22 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 15884512}
   m_SourcePrefab: {fileID: 100100000, guid: 36621476210b2c649b8aeea96b7c2587, type: 3}
+=======
+  m_GameObject: {fileID: 1760336062}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 10.16, y: 1, z: 22.45}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> 39d37f535362e3accf9020ad6cf08b69c0e97920
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+<<<<<<< HEAD
   - {fileID: 810271383}
   - {fileID: 194173830}
   - {fileID: 1733284724}
@@ -30245,3 +30319,8 @@ SceneRoots:
   - {fileID: 2105627096}
   - {fileID: 1768006089}
   - {fileID: 1823806609}
+=======
+  - {fileID: 963194228}
+  - {fileID: 705507995}
+  - {fileID: 1760336066}
+>>>>>>> 39d37f535362e3accf9020ad6cf08b69c0e97920
