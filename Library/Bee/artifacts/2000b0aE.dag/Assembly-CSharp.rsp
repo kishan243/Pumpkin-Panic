@@ -335,6 +335,7 @@
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/GhostAI.cs"
 "Assets/Scripts/GhostSpawner.cs"
+"Assets/Scripts/HealthBar.cs"
 "Assets/Scripts/ItemSpawner.cs"
 "Assets/Scripts/MoveCamera.cs"
 "Assets/Scripts/ObjectGrabble.cs"
