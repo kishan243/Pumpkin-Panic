@@ -14,6 +14,9 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private Image damageFlashImage;
     [SerializeField] private float flashDuration = 0.15f;
 
+    // --- NEW: This will be controlled by the Buff Manager ---
+    public bool isInvincible = false;
+
     public static PlayerHealth Instance { get; private set; }
 
     private void Awake()
@@ -41,6 +44,11 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int damageAmount)
     {
+        // --- THIS IS THE FIX ---
+        // If we're invincible, do nothing.
+        if (isInvincible) return;
+        // -----------------------
+
         if (currentHealth <= 0) return;
 
         currentHealth -= damageAmount;
@@ -56,6 +64,16 @@ public class PlayerHealth : MonoBehaviour
         {
             Die();
         }
+    }
+
+    public void Heal(int healAmount)
+    {
+        currentHealth += healAmount;
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        UpdateHealthUI();
     }
 
     private void UpdateHealthUI()
@@ -82,7 +100,6 @@ public class PlayerHealth : MonoBehaviour
             damageFlashImage.color = new Color(1f, 0f, 0f, alpha);
             yield return null;
         }
-
         damageFlashImage.color = new Color(1f, 0f, 0f, 0f);
     }
 
