@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; // Required for UI elements like Slider and Image
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -10,17 +10,14 @@ public class PlayerHealth : MonoBehaviour
     private int currentHealth;
 
     [Header("UI Elements")]
-    [SerializeField] private Slider healthSlider; // Drag your Health Bar Slider here
-    [SerializeField] private Image damageFlashImage; // Drag your red damage vignette Image here
+    [SerializeField] private Slider healthSlider;
+    [SerializeField] private Image damageFlashImage;
     [SerializeField] private float flashDuration = 0.15f;
 
-    // --- Singleton Pattern ---
-    // This makes it easy for ghosts to find and damage the player
     public static PlayerHealth Instance { get; private set; }
 
     private void Awake()
     {
-        // Set up the singleton
         if (Instance != null && Instance != this)
         {
             Destroy(this.gameObject);
@@ -38,13 +35,13 @@ public class PlayerHealth : MonoBehaviour
 
         if (damageFlashImage != null)
         {
-            damageFlashImage.color = new Color(1f, 0f, 0f, 0f); // Start invisible
+            damageFlashImage.color = new Color(1f, 0f, 0f, 0f);
         }
     }
 
     public void TakeDamage(int damageAmount)
     {
-        if (currentHealth <= 0) return; // Already dead
+        if (currentHealth <= 0) return;
 
         currentHealth -= damageAmount;
         if (currentHealth < 0)
@@ -73,11 +70,9 @@ public class PlayerHealth : MonoBehaviour
     {
         if (damageFlashImage == null) yield break;
 
-        // Flash red
-        damageFlashImage.color = new Color(1f, 0f, 0f, 0.4f); // 40% opacity red
+        damageFlashImage.color = new Color(1f, 0f, 0f, 0.4f);
         yield return new WaitForSeconds(flashDuration);
 
-        // Fade out
         float fadeTime = flashDuration * 2;
         float timer = 0;
         while (timer < fadeTime)
@@ -88,15 +83,12 @@ public class PlayerHealth : MonoBehaviour
             yield return null;
         }
 
-        damageFlashImage.color = new Color(1f, 0f, 0f, 0f); // Ensure fully transparent
+        damageFlashImage.color = new Color(1f, 0f, 0f, 0f);
     }
 
     private void Die()
     {
-        // TODO: Add your game over logic here
         Debug.Log("Player has died!");
-        // For example, you could disable player movement and show a "Game Over" screen
-        // this.GetComponent<PlayerPickupDrop>().enabled = false;
-        // this.GetComponent<SimpleSampleCharacterControl>().enabled = false;
+        GameManager.Instance.TriggerLose();
     }
 }

@@ -344,6 +344,7 @@
 "Assets/Scripts/PlayerHealth.cs"
 "Assets/Scripts/PlayerPickupDrop.cs"
 "Assets/Scripts/randomMove.cs"
+"Assets/Scripts/ShowCursor.cs"
 "Assets/Scripts/ThirdPersonOrbitCamera.cs"
 "Assets/Supercyan Character Pack Free Sample/Scripts/AccessoryLogic.cs"
 "Assets/Supercyan Character Pack Free Sample/Scripts/AccessoryWearLogic.cs"

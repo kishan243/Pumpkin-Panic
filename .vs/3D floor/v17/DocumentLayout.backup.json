@@ -3,11 +3,35 @@
   "WorkspaceRootPath": "C:\\Users\\L1ght\\3D floor\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\L1ght\\3D floor\\Library\\PackageCache\\com.unity.collab-proxy@2.0.7\\Editor\\PlasticSCM\\Inspector\\DrawInspectorOperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.collab-proxy@2.0.7\\Editor\\PlasticSCM\\Inspector\\DrawInspectorOperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E88822A9-0EAA-5232-75B8-A2F39B715E35}|Assembly-CSharp.csproj|c:\\users\\l1ght\\3d floor\\assets\\scripts\\showcursor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E88822A9-0EAA-5232-75B8-A2F39B715E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\showcursor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E88822A9-0EAA-5232-75B8-A2F39B715E35}|Assembly-CSharp.csproj|c:\\users\\l1ght\\3d floor\\assets\\scripts\\ghostai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E88822A9-0EAA-5232-75B8-A2F39B715E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ghostai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E88822A9-0EAA-5232-75B8-A2F39B715E35}|Assembly-CSharp.csproj|c:\\users\\l1ght\\3d floor\\assets\\scripts\\objectgrabble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E88822A9-0EAA-5232-75B8-A2F39B715E35}|Assembly-CSharp.csproj|C:\\Users\\L1ght\\3D floor\\assets\\scripts\\playerpickupdrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E88822A9-0EAA-5232-75B8-A2F39B715E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerpickupdrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E88822A9-0EAA-5232-75B8-A2F39B715E35}|Assembly-CSharp.csproj|C:\\Users\\L1ght\\3D floor\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E88822A9-0EAA-5232-75B8-A2F39B715E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E88822A9-0EAA-5232-75B8-A2F39B715E35}|Assembly-CSharp.csproj|C:\\Users\\L1ght\\3D floor\\assets\\scripts\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E88822A9-0EAA-5232-75B8-A2F39B715E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E88822A9-0EAA-5232-75B8-A2F39B715E35}|Assembly-CSharp.csproj|C:\\Users\\L1ght\\3D floor\\assets\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E88822A9-0EAA-5232-75B8-A2F39B715E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E88822A9-0EAA-5232-75B8-A2F39B715E35}|Assembly-CSharp.csproj|C:\\Users\\L1ght\\3D floor\\assets\\scripts\\objectgrabble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E88822A9-0EAA-5232-75B8-A2F39B715E35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\objectgrabble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,11 +42,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DrawInspectorOperations.cs",
+              "DocumentMoniker": "C:\\Users\\L1ght\\3D floor\\Library\\PackageCache\\com.unity.collab-proxy@2.0.7\\Editor\\PlasticSCM\\Inspector\\DrawInspectorOperations.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.collab-proxy@2.0.7\\Editor\\PlasticSCM\\Inspector\\DrawInspectorOperations.cs",
+              "ToolTip": "C:\\Users\\L1ght\\3D floor\\Library\\PackageCache\\com.unity.collab-proxy@2.0.7\\Editor\\PlasticSCM\\Inspector\\DrawInspectorOperations.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.collab-proxy@2.0.7\\Editor\\PlasticSCM\\Inspector\\DrawInspectorOperations.cs",
+              "ViewState": "AgIAAPsAAAAAAAAAAAD4vwkBAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T03:56:08.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ShowCursor.cs",
+              "DocumentMoniker": "C:\\Users\\L1ght\\3D floor\\Assets\\Scripts\\ShowCursor.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ShowCursor.cs",
+              "ToolTip": "C:\\Users\\L1ght\\3D floor\\Assets\\Scripts\\ShowCursor.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ShowCursor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T03:44:42.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerPickupDrop.cs",
+              "DocumentMoniker": "C:\\Users\\L1ght\\3D floor\\Assets\\Scripts\\PlayerPickupDrop.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerPickupDrop.cs",
+              "ToolTip": "C:\\Users\\L1ght\\3D floor\\Assets\\Scripts\\PlayerPickupDrop.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerPickupDrop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T03:04:46.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\L1ght\\3D floor\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\L1ght\\3D floor\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAUwFwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T01:48:46.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerHealth.cs",
+              "DocumentMoniker": "C:\\Users\\L1ght\\3D floor\\Assets\\Scripts\\PlayerHealth.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerHealth.cs",
+              "ToolTip": "C:\\Users\\L1ght\\3D floor\\Assets\\Scripts\\PlayerHealth.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerHealth.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAIwF0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T07:16:11.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HealthBar.cs",
+              "DocumentMoniker": "C:\\Users\\L1ght\\3D floor\\Assets\\Scripts\\HealthBar.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HealthBar.cs",
+              "ToolTip": "C:\\Users\\L1ght\\3D floor\\Assets\\Scripts\\HealthBar.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HealthBar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T07:11:45.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ObjectGrabble.cs",
               "DocumentMoniker": "C:\\Users\\L1ght\\3D floor\\Assets\\Scripts\\ObjectGrabble.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ObjectGrabble.cs",
@@ -30,18 +128,17 @@
               "RelativeToolTip": "Assets\\Scripts\\ObjectGrabble.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAArwCoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T00:18:42.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T00:18:42.121Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "GhostAI.cs",
               "DocumentMoniker": "C:\\Users\\L1ght\\3D floor\\Assets\\Scripts\\GhostAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GhostAI.cs",
               "ToolTip": "C:\\Users\\L1ght\\3D floor\\Assets\\Scripts\\GhostAI.cs",
               "RelativeToolTip": "Assets\\Scripts\\GhostAI.cs",
-              "ViewState": "AgIAAIwAAAAAAAAAAAAkwO0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-28T00:17:40.574Z",
               "EditorCaption": ""

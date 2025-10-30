@@ -1,58 +1,93 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
+[RequireComponent(typeof(AudioSource))] // Ensures we have an AudioSource
 public class GameManager : MonoBehaviour
 {
-    public Transform player;
-    public TextMeshProUGUI ghostsCapturedText;
-    public GameObject winPanel;
+    [Header("Scene Names")]
+    [SerializeField] private string winSceneName = "win";
+    [SerializeField] private string loseSceneName = "lose";
 
-    private int ghostsCaptured = 0;
-    private int totalGhostsInScene;
+    [Header("UI")]
+    [SerializeField] private TextMeshProUGUI ghostCountText;
 
-    void Start()
+    [Header("Audio")] // --- NEW SECTION ---
+    [SerializeField] private AudioClip backgroundMusic;
+    private AudioSource audioSource;
+    // ---------------------------------
+
+    private int activeGhostCount = 0;
+
+    public static GameManager Instance { get; private set; }
+
+    private void Awake()
     {
-        totalGhostsInScene = GameObject.FindGameObjectsWithTag("Collectible").Length;
-        winPanel.SetActive(false);
-        Time.timeScale = 1f;
-        UpdateGhostCounter();
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            Instance = this;
+        }
+
+        // --- NEW: Get the AudioSource component ---
+        audioSource = GetComponent<AudioSource>();
+        // ---------------------------------------
     }
 
-    void Update()
+    private void Start()
     {
-        if (player.position.y < -10f)
+        // --- NEW: Start the background music ---
+        if (backgroundMusic != null)
         {
-            RestartGame();
+            audioSource.clip = backgroundMusic;
+            audioSource.loop = true;
+            audioSource.Play();
+        }
+        // -------------------------------------
+    }
+
+    // --- Ghost Counting ---
+    public void RegisterGhost()
+    {
+        activeGhostCount++;
+        UpdateGhostUI();
+    }
+
+    public void OnGhostKilled()
+    {
+        activeGhostCount--;
+        UpdateGhostUI();
+
+        if (activeGhostCount <= 0)
+        {
+            TriggerWin();
         }
     }
 
-    public void OnGhostCaptured()
+    private void UpdateGhostUI()
     {
-        ghostsCaptured++;
-        UpdateGhostCounter();
-
-        if (ghostsCaptured >= totalGhostsInScene)
+        if (ghostCountText != null)
         {
-            WinGame();
+            ghostCountText.text = "Ghosts Left: " + activeGhostCount;
         }
     }
 
-    void UpdateGhostCounter()
+    // --- Win/Lose Logic ---
+    public void TriggerWin()
     {
-        ghostsCapturedText.text = "GHOSTS CAPTURED: " + ghostsCaptured + " / " + totalGhostsInScene;
+        Debug.Log("PLAYER WINS!");
+        SceneManager.LoadScene(winSceneName);
     }
 
-    void WinGame()
+    public void TriggerLose()
     {
-        winPanel.SetActive(true);
-        Time.timeScale = 0f;
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-    }
-
-    public void RestartGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Debug.Log("PLAYER LOSES!");
+        SceneManager.LoadScene(loseSceneName);
     }
 }
